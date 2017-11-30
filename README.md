@@ -5,11 +5,16 @@ Prerequisite.
 
   - Ruby ~> 2.2.x
   - Rails ~> 5.1.x
+  - MySQL ~> 5.x.x
+
+* copy and rename example.database.yml file to database.yml
 
 ##### Follow along:
 ```
 $ gem install bundler
 $ bundle install
+$ rake db:create
+$ rake db:migrate
 $ rails s 
 
 
