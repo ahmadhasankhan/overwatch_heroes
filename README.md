@@ -1,24 +1,26 @@
-# README
+Overwatch Heroes
+===========================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Prerequisite.
 
-Things you may want to cover:
+  - Ruby ~> 2.2.x
+  - Rails ~> 5.1.x
 
-* Ruby version
+##### Follow along:
+```
+$ gem install bundler
+$ bundle install
+$ rails s 
 
-* System dependencies
 
-* Configuration
+// If you want to run on some specific port then apend -p {portnumber} 
+```
 
-* Database creation
+Default port will be '3000'
+You may access the application at:
 
-* Database initialization
+http://localhost:3000
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Import Data
+$ rake import:heros
+$ rake import:abilities
